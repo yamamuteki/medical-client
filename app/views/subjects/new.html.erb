@@ -2,5 +2,6 @@
 <%= form_tag do %>
   <%= text_field_tag 'subject_code' %>
   <%= autocomplete_field_tag 'medicine', '', 'https://medical-master.herokuapp.com/medicines/autocomplete_medicine_name' %>
+  <%= autocomplete_field_tag 'ae', '', 'https://medical-master.herokuapp.com/diseases/autocomplete_disease_name' %>
   <%= submit_tag '送信' %>
 <% end %>
